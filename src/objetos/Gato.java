@@ -1,18 +1,17 @@
 package objetos;
 
-public class Perro extends Animal {
+public class Gato extends Animal {
 	
 	public Perro(String nombre, int edad){
 		super(nombre,edad);
-		setEspecie("Perro");
+		setEspecie("Gato");
 		setPatas(4);
 	}
 	
 	public String getSonido(){
-		return "Esta especie hace gua gua";
+		return "Esta especie hace miau miau";
 	}
 	
 	
 	
 }
-
