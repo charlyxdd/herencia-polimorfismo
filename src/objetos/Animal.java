@@ -4,28 +4,47 @@ public class Animal{
 	private String nombre;
 	private String especie;
 	private int edad;
-
-	public Animal(String nombre, String especie, int edad){
+	private int patas;
+	
+	public Animal(String nombre, int edad){
 		this.nombre=nombre;
-		this.especie=especie;
 		this.edad=edad;
 	}
 
-	public Animal(){
-
-	}
-
-	public Animal(String nombre){
-
-	}
-
-
-	public setNombre(String nombre){
+	public void setNombre(String nombre){
 		this.nombre=nombre;
 	}
 
-	public getNombre(){
+	public String getNombre(){
 		return nombre;
 	}
+	
+	public void setEspecie(String especie){
+		this.especie=especie;
+	}
 
+	public String getEspecie(){
+		return especie;
+	}
+	
+	public void setEdad(int edad){
+		this.edad=edad;
+	}
+
+	public int getEdad(){
+		return edad;
+	}
+	
+	public int getPatas(){
+		return patas;
+	}
+	
+	public void setPatas(int patas){
+		this.patas=patas;
+	}
+	
+	public String getSonido(){
+		return "No se ha podido determinar el sonido";
+	}
+	
 }
